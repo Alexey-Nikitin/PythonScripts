@@ -17,9 +17,17 @@ def plus():
 			sign = "+"
 			number1 = equally_
 		else:
+			if(sign == "+"):
+				number1 = int(number1) + int(number2)
+			if(sign == "-"):
+				number1 = int(number1) - int(number2)
+			if(sign == "*"):
+				number1 = int(number1) * int(number2)
+			if(sign == "/"):
+				number1 = int(number1) / int(number2)
 			sign = "+"
-			number1 = int(number1) + int(number2)
 			number2 = ""
+			number1 = int(number1)
 	if(sign == ""):
 		sign = "+"
 def minus(): 
@@ -32,9 +40,17 @@ def minus():
 			sign = "-"
 			number1 = equally_
 		else:
+			if(sign == "+"):
+				number1 = int(number1) + int(number2)
+			if(sign == "-"):
+				number1 = int(number1) - int(number2)
+			if(sign == "*"):
+				number1 = int(number1) * int(number2)
+			if(sign == "/"):
+				number1 = int(number1) / int(number2)
 			sign = "-"
-			number1 = int(number1) - int(number2)
 			number2 = ""
+			number1 = int(number1)
 	if(sign == ""):
 		sign = "-"
 def multiply(): 
@@ -47,9 +63,17 @@ def multiply():
 			sign = "*"
 			number1 = equally_
 		else:
+			if(sign == "+"):
+				number1 = int(number1) + int(number2)
+			if(sign == "-"):
+				number1 = int(number1) - int(number2)
+			if(sign == "*"):
+				number1 = int(number1) * int(number2)
+			if(sign == "/"):
+				number1 = int(number1) / int(number2)
 			sign = "*"
-			number1 = int(number1) * int(number2)
 			number2 = ""
+			number1 = int(number1)
 	if(sign == ""):
 		sign = "*"
 def divide(): 
@@ -62,9 +86,17 @@ def divide():
 			sign = "/"
 			number1 = equally_
 		else:
+			if(sign == "+"):
+				number1 = int(number1) + int(number2)
+			if(sign == "-"):
+				number1 = int(number1) - int(number2)
+			if(sign == "*"):
+				number1 = int(number1) * int(number2)
+			if(sign == "/"):
+				number1 = int(number1) / int(number2)
 			sign = "/"
-			number1 = int(number1) / (number2)
 			number2 = ""
+			number1 = int(number1)
 	if(sign == ""):
 		sign = "/"  
 
@@ -165,6 +197,7 @@ def equally():
 	lbl.configure(text = equally_)
 	number2 = ""
 	number1 = equally_
+	sign = ""
 
 def clear():
 	global number1
